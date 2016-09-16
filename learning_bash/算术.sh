@@ -19,6 +19,21 @@ while [ $j -le 9 ]; do
     let j++
 done
 
+
+# 用 until 实现
+declare -i j=1
+declare -i i=1
+
+until [ $j -gt 9 ]; do
+    until [ $i -gt $j ]; do
+        echo -n -e "${i}X${j}=$[$i*$j]\t"
+        let i++
+    done
+    echo
+    let i=1
+    let j++
+done
+
 ============
 mul.sh
 ============
@@ -108,6 +123,19 @@ done
 echo "$i"
 echo "Summary: $sum"
 
+
+# 用 until 实现
+declare -i i=1
+declare -i sum=0
+
+until [ $i -gt 100 ]; do
+    let sum+=$i
+    let i++
+done
+
+echo "Sum: $sum"
+
+
 ============
 useradd.sh
 ============
@@ -128,3 +156,6 @@ while [ $i -le 10 ]; do
 done
 
 echo "Add $users users."
+
+
+
