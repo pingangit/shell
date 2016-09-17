@@ -407,5 +407,22 @@ status)
 esac
 
 
+=============
+array.sh
+=============
+#!/bin/bash
+#
+declare -a rand
+declare -i max=0
+
+for i in {0..9}; do
+    rand[$i]=$RANDOM
+    echo ${rand[$i]}
+    [ ${rand[$i]} -gt $max ] && max=${rand[$i]}
+done
+
+echo "Max: $max"
+
+
 
 
