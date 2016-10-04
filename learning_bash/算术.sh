@@ -1,8 +1,8 @@
 
 
-============
-mul2.sh
-============
+#============
+#mul2.sh
+#============
 
 #!/bin/bash
 #
@@ -34,9 +34,9 @@ until [ $j -gt 9 ]; do
     let j++
 done
 
-============
-mul.sh
-============
+#============
+#mul.sh
+#============
 
 #!/bin/bash
 
@@ -48,9 +48,9 @@ for j in {1..9}; do
     echo
 done
 
-============
-ping2.sh
-============
+#============
+#ping2.sh
+#============
 
 #!/bin/bash
 #
@@ -74,9 +74,9 @@ done
 echo "Up hosts: $uphosts."
 echo "Down hosts: $downhosts."
 
-============
-rand.sh
-============
+#============
+#rand.sh
+#============
 
 #!/bin/bash
 #
@@ -106,9 +106,9 @@ done
 echo "MAX: $max."
 echo "MIN: $min."
 
-============
-summary.sh
-============
+#============
+#summary.sh
+#============
 
 #!/bin/bash
 #
@@ -136,9 +136,9 @@ done
 echo "Sum: $sum"
 
 
-============
-useradd.sh
-============
+#============
+#useradd.sh
+#============
 
 #!/bin/bash
 #
@@ -158,9 +158,9 @@ done
 echo "Add $users users."
 
 
-=========
-even.sh
-=========
+#=========
+#even.sh
+#=========
 
 #!/bin/bash
 #
@@ -180,9 +180,9 @@ echo "Even sum: $sum"
 
 
 
-===========
-user_log.sh
-===========
+#===========
+#user_log.sh
+#===========
 #!/bin/bash
 #
 
@@ -221,9 +221,9 @@ done
 echo "$username logged on." >> /tmp/user.log
 
 
-=========
-evenid.sh
-=========
+#=========
+#evenid.sh
+#=========
 #!/bin/bash
 
 while read line; do
@@ -234,9 +234,9 @@ while read line; do
 done < /etc/passwd
 
 
-========
-sum2.sh
-========
+#========
+#sum2.sh
+#========
 # for 的特殊格式
 #!/bin/bash
 #
@@ -260,9 +260,9 @@ for ((j=1;j<=9;j++)); do
 done
 
 
-==========
-sysinfo.sh
-==========
+#==========
+#sysinfo.sh
+#==========
 #!/bin/bash
 #
 cat << EOF
@@ -322,9 +322,9 @@ disk)
 esac
 
 
-=============
-function 练习
-=============
+#=============
+#function 练习
+#=============
 #!/bin/bash
 #
 username='myuser'
@@ -341,9 +341,9 @@ function adduser {
 adduser
 
 
-===========
-服务脚本
-===========
+#===========
+#服务脚本
+#===========
 #!/bin/bash
 #
 # chkconfig: - 88 12
@@ -406,10 +406,9 @@ status)
     ;;
 esac
 
-
-=============
-array.sh
-=============
+#=============
+#array.sh
+#=============
 #!/bin/bash
 #
 declare -a rand
