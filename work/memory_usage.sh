@@ -5,7 +5,3 @@ free | awk '/Mem/{printf("used: %.2f%"), $3/$2*100} /buffers\/cache/{printf(", b
 
 # Method 2
 free | grep Mem | awk '{print $3/$2 * 100.0}'
-
-
-# test
-free
